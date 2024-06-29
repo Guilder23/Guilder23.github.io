@@ -1,0 +1,95 @@
+/* Estilos para estado 'Incompleta' */
+.incomplete {
+    background-color: #f09d9d; /* Rojo claro */
+    color: #cc3333; /* Rojo oscuro */
+}
+
+/* Estilos para estado 'En curso' */
+.in-progress {
+    background-color: #ffffcc; /* Amarillo claro */
+    color: #c9e75d; /* Amarillo oscuro */
+}
+
+/* Estilos para estado 'Completada' */
+.completed {
+    background-color: #ccffcc; /* Verde claro */
+    color: #235a23; /* Verde oscuro */
+
+}
+
+/* Estilos generales para los ítems de la lista */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #c9174c 10%, #605ed8 100%, rgb(17, 151, 39));
+    box-shadow: 0 5px 15px black;
+}
+
+.container{
+    background: rgb(172, 156, 156);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px black;
+}
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #f3eded;
+}
+
+.due-date {
+    font-size: 0.9rem;
+    color: #1a1616;
+    margin-left: 1rem;
+}
+
+/* Otros estilos como los botones dentro de cada ítem */
+
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    box-shadow: 0 5px 10px white;
+    transition: background 0.3s ease;
+}
+input[type="text"] {
+    width: 50%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 5px black;
+}
+input[type="date"] {
+    width: 18%;
+    padding: 0.5rem;
+    border: 1px solid #8b3a3a;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+    box-shadow: 0 5px 5px rgb(92, 24, 24);
+}
+
+button.statusButton {
+    margin-right: 0.5rem;
+    border-radius: 30px;
+    box-shadow: 0 1px 1px;
+}
+
+button.deleteButton {
+    background-color: #bb2c2c; /* Rojo */
+    color: white;
+    box-shadow: 0 2px 12px rgb(19, 17, 17);
+}
+
+button.deleteButton:hover {
+    background-color: #751642; /* Rojo más oscuro */
+}
